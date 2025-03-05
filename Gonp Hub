@@ -1,0 +1,111 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ZeianRussell/Kavo-UI-Library/main/Movable.source.lua"))()
+local Window = Library.CreateLib("ใส่ชื่อ   : สคริปต์จะเพิ่มมาเรื่อยๆ :", "DarkTheme")
+
+--หน้าหนึ่ง
+local Tab = Window:NewTab("player")
+local Section = Tab:NewSection("เกี่ยวกับผู้เล่น")
+
+--ปรับความเร็ว
+Section:NewSlider("ความเร็ว", "ปรับความเร็วของตัวละคร", 0, 1000, function(value)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
+end)
+--รีเซ็ตความเร็ว
+Section:NewButton("รีเซ็ตความเร็ว", "ตั้งค่าเป็นค่าเริ่มต้น (16)", function()
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+
+--ปรับแรงกระโดด
+Section:NewSlider("พลังการกระโดด", "ปรับพลังการกระโดดของตัวละคร", 0, 1000, function(value)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
+end)
+--รีเซ็ตพลังการกระโดด
+Section:NewButton("รีเซ็ตพลังการกระโดด", "ตั้งค่าเป็นค่าเริ่มต้น (50)", function()
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+end)
+
+--ปรับแรงโน้มถ่วง
+Section:NewSlider("แรงโน้มถ่วง", "ปรับแรงโน้มถ่วงของเกม", 0, 1000, function(value)
+    game.Workspace.Gravity = value
+end)
+--รีเซ็ตแรงโน้มถ่วง
+Section:NewButton("รีเซ็ตแรงโน้มถ่วง", "ตั้งค่าเป็นค่าเริ่มต้น (196.2)", function()
+    game.Workspace.Gravity = 196.2
+end)
+
+--จบหน้าหนึ่ง
+
+--////////////////////////////////////////////////////////////////////////////
+
+
+--หน้าสอง
+local Tab = Window:NewTab("Hub")
+local Section = Tab:NewSection("รวมสคริปต์อื่นๆ")
+
+
+Section:NewButton("Ez Hub", "กดเพื่อรัน", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug42O/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
+end)
+
+Section:NewButton("Ghost hub", "กดเพื่อรัน", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
+end)
+
+Section:NewButton("Onyx hub  มีคีย์🔑", "กดเพื่อรัน", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptBrv/OHU/refs/heads/main/OHU.md",true))()
+
+end)
+
+Section:NewButton("", "กดเพื่อรัน", function()
+    
+end)Section:NewButton("", "กดเพื่อรัน", function()
+    
+end)
+
+
+
+
+
+
+
+
+--////////////////////////////////////////////////////////////////////////////
+
+
+--หน้าสาม
+local Tab = Window:NewTab("script universal")
+local Section = Tab:NewSection("สคริปต์ทั่วไป")
+
+
+
+
+
+
+
+
+
+
+
+--ปุ่มเปิด/ปิด UI
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "ScreenGui"
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+local Toggle = Instance.new("TextButton")
+Toggle.Name = "Toggle"
+Toggle.Parent = ScreenGui
+Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)--สี
+Toggle.Position = UDim2.new(0, 0, 0.454706937, 0)
+Toggle.Size = UDim2.new(0, 50, 0, 50)--ขนาดUiเปิดปิด
+Toggle.Font = Enum.Font.SourceSans
+Toggle.Text = "เปิด/ปิด"  --ชื่อ
+Toggle.TextColor3 = Color3.fromRGB(248, 248, 248)
+Toggle.TextSize = 20.000 --ขนาดคำ
+Toggle.Draggable = true --ขยับUiเปิดปิดได้ไหม
+Toggle.MouseButton1Click:connect(function()
+    Library:ToggleUI()
+end)
+
+local Corner = Instance.new("UICorner")
+Corner.Name = "Corner"
+Corner.Parent = Toggle
