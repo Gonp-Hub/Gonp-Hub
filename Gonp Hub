@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ZeianRussell/Kavo-UI-Library/main/Movable.source.lua"))()
-local Window = Library.CreateLib("Gonp Hub  : สคริปต์จะเพิ่มมาเรื่อยๆ :", "DarkTheme")
+local Window = Library.CreateLib("ใส่ชื่อ   : สคริปต์จะเพิ่มมาเรื่อยๆ :", "DarkTheme")
 
 --หน้าหนึ่ง
 local Tab = Window:NewTab("player")
@@ -55,11 +55,6 @@ Section:NewButton("Onyx hub  มีคีย์🔑", "กดเพื่อร�
 
 end)
 
-Section:NewButton("", "กดเพื่อรัน", function()
-    
-end)Section:NewButton("", "กดเพื่อรัน", function()
-    
-end)
 
 
 
@@ -74,6 +69,28 @@ end)
 --หน้าสาม
 local Tab = Window:NewTab("script universal")
 local Section = Tab:NewSection("สคริปต์ทั่วไป")
+
+Section:NewButton("Infinite Yield", "กดเพื่อรัน", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+
+end)
+
+
+
+
+
+
+
+
+
+
+
+--////////////////////////////////////////////////////////////////////////////
+
+
+--หน้าสี่
+local Tab = Window:NewTab("script map")
+local Section = Tab:NewSection("สคริปต์สำหรับแมพนั้นๆ")
 
 
 
