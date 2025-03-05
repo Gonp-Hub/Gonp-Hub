@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ZeianRussell/Kavo-UI-Library/main/Movable.source.lua"))()
-local Window = Library.CreateLib("ใส่ชื่อ   : สคริปต์จะเพิ่มมาเรื่อยๆ :", "DarkTheme")
+local Window = Library.CreateLib("Gonp Hub  : สคริปต์จะเพิ่มมาเรื่อยๆ :", "DarkTheme")
 
 --หน้าหนึ่ง
 local Tab = Window:NewTab("player")
