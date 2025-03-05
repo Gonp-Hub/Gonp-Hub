@@ -39,7 +39,7 @@ end)
 
 --หน้าสอง
 local Tab = Window:NewTab("Hub")
-local Section = Tab:NewSection("รวมสคริปต์อื่นๆ")
+local Section = Tab:NewSection("รวมสคริปต์อื่นๆหรือแมพ")
 
 
 Section:NewButton("Ez Hub", "กดเพื่อรัน", function()
@@ -55,6 +55,25 @@ Section:NewButton("Onyx hub  มีคีย์🔑", "กดเพื่อร�
 
 end)
 
+Section:NewButton("L hub", "กดเพื่อรัน", function()
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/ad429886ae1000faaa93cdb1bfdc7727.lua"))()
+
+end)
+
+Section:NewButton("skibidi hub", "กดเพื่อรัน", function()
+    loadstring(game:HttpGet("https://gitlab.com/skibidi7575006/skibidiidi/-/raw/main/SKIBIDIIHUBB"))()
+
+end)
+
+Section:NewButton("solara hub", "กดเพื่อรัน", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/samuraa1/Solara-Hub/refs/heads/main/Solara%20Hub.lua"))()
+
+end)
+
+Section:NewButton(" hub", "กดเพื่อรัน", function()
+    
+
+end)
 
 
 
@@ -62,7 +81,7 @@ end)
 
 
 
-
+--จบหน้าสอง
 --////////////////////////////////////////////////////////////////////////////
 
 
@@ -75,6 +94,10 @@ Section:NewButton("Infinite Yield", "กดเพื่อรัน", function()
 
 end)
 
+Section:NewButton("aimbot esp Legitbot Ragebot  มีคีย์🔑", "กดเพื่อรัน", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Robloxhacksmaker/roblox-universal-aimbot/refs/heads/main/Loader.lua"))();
+
+end)
 
 
 
@@ -83,8 +106,7 @@ end)
 
 
 
-
-
+--จบหน้าสาม
 --////////////////////////////////////////////////////////////////////////////
 
 
@@ -101,6 +123,8 @@ local Section = Tab:NewSection("สคริปต์สำหรับแมพ
 
 
 
+--จบหน้าสี่
+--////////////////////////////////////////////////////////////////////////////
 
 --ปุ่มเปิด/ปิด UI
 local ScreenGui = Instance.new("ScreenGui")
