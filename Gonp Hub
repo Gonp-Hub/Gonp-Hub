@@ -75,8 +75,7 @@ end)
 
 
 
---จบหน้าหนึ่ง
---////////////////////////////////////////////////////////////////////////////
+-------------------------------------------------------------------------------------------------------------------------------------------
 
 
 --หน้าสอง
@@ -123,8 +122,7 @@ end)
 
 
 
---จบหน้าสอง
---////////////////////////////////////////////////////////////////////////////
+-------------------------------------------------------------------------------------------------------------------------------------------
 
 
 --หน้าสาม
@@ -180,8 +178,7 @@ end)
 
 
 
---จบหน้าสาม
---////////////////////////////////////////////////////////////////////////////
+-------------------------------------------------------------------------------------------------------------------------------------------
 
 
 --หน้าสี่
@@ -208,8 +205,33 @@ end)
 
 
 
---จบหน้าสี่
---////////////////////////////////////////////////////////////////////////////
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+local Tab = Window:NewTab("แมพทหาร")
+local Section = Tab:NewSection("สคริปต์เรื้อนแมพทหาร")
+
+Section:NewButton("kill all", "ฆ่าทุกคนในแมพ ไม่มีUi", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Gon900p/script/refs/heads/main/kill%20all"))()
+end)
+
+Section:NewButton("kill all 2", "ไม่รุ้มีทำไม", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SAZXHUB/Killalllllllll/refs/heads/main/README.md"))()
+end)
+
+Section:NewButton("Wack shop", "เครดิต Wack shop", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/wackshop/WACKV001/refs/heads/main/GUI1.txt",true))()
+end)
+
+Section:NewButton("tool giver", "เสกของ ได้บางแมพ", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub-Backup/main/gametoolgiver.lua"))()
+end)
+
+Section:NewButton("หายตัว", "เข้าค่ายได้ชิวๆ", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Gon900p/script/refs/heads/main/invisible"))()
+end)
+
+
+
 
 --ปุ่มเปิด/ปิด UI
 local ScreenGui = Instance.new("ScreenGui")
