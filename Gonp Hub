@@ -75,7 +75,8 @@ end)
 
 
 
--------------------------------------------------------------------------------------------------------------------------------------------
+--จบหน้าหนึ่ง
+--////////////////////////////////////////////////////////////////////////////
 
 
 --หน้าสอง
@@ -122,7 +123,8 @@ end)
 
 
 
--------------------------------------------------------------------------------------------------------------------------------------------
+--จบหน้าสอง
+--////////////////////////////////////////////////////////////////////////////
 
 
 --หน้าสาม
@@ -178,24 +180,29 @@ end)
 
 
 
--------------------------------------------------------------------------------------------------------------------------------------------
+--จบหน้าสาม
+--////////////////////////////////////////////////////////////////////////////
 
 
 --หน้าสี่
 local Tab = Window:NewTab("script map")
 local Section = Tab:NewSection("สคริปต์สำหรับแมพนั้นๆ")
+local Section = Tab:NewSection("สคริปต์แมพ fisch")
 
-Section:NewButton("attack on titan freedom war", "กดเพื่อรัน", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/PorkDevMode/trump-client-source/refs/heads/main/source.luau"))()
-
+Section:NewButton("bonk hub  มีคีย์🔑", "กดเพื่อรัน", function()
+    loadstring(game:HttpGet("https://bonkhubloader.netlify.app",true))()
 end)
 
-Section:NewButton("no big deal", "laser gun", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/Jonmaster2007/Jonmaster1/refs/heads/main/No%20Big%20Deal'))()
-
+Section:NewButton("forge Hub  มีคีย์🔑", "กดเพื่อรัน", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Skzuppy/forge-hub/main/loader.lua"))()
 end)
 
-Section:NewButton("fisch speed hub", "กดเพื่อรัน", function()
+Section:NewButton("Lunor hub  มีคีย์🔑", "กดเพื่อรัน", function()
+    script_key = 'Insert Lunor Key Here';
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Just3itx/Lunor-Loadstrings/refs/heads/main/Loader'))()
+end)
+
+Section:NewButton("speed hub", "กดเพื่อรัน", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
 end)
 
@@ -205,9 +212,23 @@ end)
 
 
 
--------------------------------------------------------------------------------------------------------------------------------------------
 
-local Tab = Window:NewTab("แมพทหาร")
+Section:NewButton("no big deal", "laser gun", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Jonmaster2007/Jonmaster1/refs/heads/main/No%20Big%20Deal'))()
+
+end)
+
+
+
+
+
+
+
+
+--จบหน้าสี่
+--////////////////////////////////////////////////////////////////////////////
+
+local Tab = Window:NewTab("แมพทหาร🤑🤑🤑")
 local Section = Tab:NewSection("สคริปต์เรื้อนแมพทหาร")
 
 Section:NewButton("kill all", "ฆ่าทุกคนในแมพ ไม่มีUi", function()
